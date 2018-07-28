@@ -23,14 +23,14 @@
 	padding: 0;
 	border: 0;
 	outline: 0;
+	font-size: 100%
 	vertical-align: baseline;
 	background: transparent;
 }
 #header {
 	background-color: #003355;
-	padding: 2vh 0 2vh 0;
+	padding: 1.5rem 0 1.5rem 0;
 	position: fixed;
-	top: 0;
 	width: 100%;
 	display: flex;
 	flex-wrap: nowrap;
@@ -38,26 +38,26 @@
 	justify-content: center;
 }
 #name_title {
-	font-size: 3em;
+	font-size: 3rem;
 	color: #FFFFFF;
+	padding-left: 1rem;
 }
 #navbar {
-	font-size: 1.7em;
+	font-size: 1.7rem;
 	color: #FFFFFF;
-	word-spacing: 2em;
-	padding: 0 10vh 0 10vh;
+	word-spacing: 3rem;
+	padding: 0 5rem 0 5rem;
 }
 .nav-link {
 	text-decoration: none;
 	color: #FFFFFF;
 }
-#social_buttons {	
-}
 .buttons {
-	padding: 0 2vh 0 2vh;
+	padding: 0 1rem 0 1rem;
 }
 #main {
-	padding-top: 300px;
+	/* Helpful code below for increasing padding as display width decreases (to compensate for header as it resizes) */
+	padding-top: calc(20rem - 10vw);
 	text-align: center;
 }
 </style>
