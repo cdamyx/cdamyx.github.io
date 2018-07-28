@@ -54,11 +54,22 @@
 }
 .buttons {
 	padding: 0 1rem 0 1rem;
+	height: 32px;
+	width: 32px;
 }
 #main {
 	/* Helpful code below for increasing padding as display width decreases (to compensate for header as it resizes) */
 	padding-top: calc(20rem - 10vw);
 	text-align: center;
+}
+@media screen and (max-width: 1300px) {
+	* {
+		font-size: 80%;
+	}
+	.buttons {
+		height: 25.5px;
+		width: 25.5px;
+	}
 }
 </style>
 
@@ -81,9 +92,9 @@
 	</nav>
 		
 	<div id="social_buttons">
-		<a href="https://github.com/Dr-Toboggan"><img src="img/GitHub-Mark-Light-120px-plus.png" height="32" width="32" class="buttons" /></a>
-		<a href="https://twitter.com/default__name"><img src="img/Twitter_Social_Icon_Circle_White.png" height="32" width="32" class="buttons" /></a>
-		<a href="https://www.linkedin.com/in/chris-amyx-75109090/"><img src="img/In-White-121px-R.png" height="32" width="32" class="buttons" /></a>
+		<a href="https://github.com/Dr-Toboggan"><img src="img/GitHub-Mark-Light-120px-plus.png"  class="buttons" /></a>
+		<a href="https://twitter.com/default__name"><img src="img/Twitter_Social_Icon_Circle_White.png"  class="buttons" /></a>
+		<a href="https://www.linkedin.com/in/chris-amyx-75109090/"><img src="img/In-White-121px-R.png" class="buttons" /></a>
 	</div>
   </header>
 
