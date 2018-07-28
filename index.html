@@ -8,6 +8,7 @@
   <!--
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
   -->
+  <title>Chris Amyx - Portfolio</title>
   
   
   <!-- Viewport metadata for RWD, fixes phone rotate zoom bug -->
@@ -15,28 +16,84 @@
   
 </head>
 
-<!-- Add CSS here
+<!-- Add CSS here, or make a link to a style.css page in the head tag -->
 <style>
-</style
--->
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	background: transparent;
+}
+#header {
+	background-color: #003355;
+	padding: 2vh 3vh 2vh 3vh;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: baseline;
+	justify-content: center;
+}
+#name_title {
+	font-size: 3em;
+	color: #FFFFFF;
+}
+#navbar {
+	font-size: 1.7em;
+	color: #FFFFFF;
+	word-spacing: 2em;
+	padding: 0 10vh 0 10vh;
+}
+.nav-link {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#social_buttons {
+	padding-right: 5vh;
+}
+.buttons {
+	padding: 0 2vh 0 2vh;
+}
+#main {
+	padding-top: 300px;
+	text-align: center;
+}
+</style>
+
 
 <body>
   <!-- All page content that the users see goes here -->
 
  
-  <header>
+  <header id="header">
     <!-- Header to go across multiple pages here. -->
+	<h1 id="name_title">Chris Amyx</h1>
+	
+	<nav id="navbar">
+		<!-- Use nav for links to other places on this website. Not for external links to other sites -->
+		<a href="#intro" class="nav-link">Intro</a>
+		<a href="#experience" class="nav-link">Experience</a>
+		<a href="#projects" class="nav-link">Projects</a>
+		<a href="#personal" class="nav-link">Personal</a>
+		<a href="#contact" class="nav-link">Contact</a>
+	</nav>
+		
+	<div id="social_buttons">
+		<a href="https://github.com/Dr-Toboggan"><img src="img/GitHub-Mark-Light-120px-plus.png" height="32" width="32" class="buttons" /></a>
+		<a href="https://twitter.com/default__name"><img src="img/Twitter_Social_Icon_Circle_White.png" height="32" width="32" class="buttons" /></a>
+		<a href="https://www.linkedin.com/in/chris-amyx-75109090/"><img src="img/In-White-121px-R.png" height="32" width="32" class="buttons" /></a>
+	</div>
   </header>
 
 
-    <main>
-      <!-- main contains info related to the central topic of the page (no repeating info like banners) -->
-		<h1>Dr Toboggan's On-The-Line Portfolio</h1>
-		<h2>Projects and whatnot coming soon!</h2>
-		<h3>Test</h3>
-		<!-- test again -->
-  
-    </main>
+  <main id="main">
+	<!-- main contains info related to the central topic of the page (no repeating info like banners) -->
+	<h1>Dr Toboggan's On-The-Line Portfolio</h1>
+	<h2>Projects and whatnot coming soon!</h2>
+  </main>
 
 
   <footer>
