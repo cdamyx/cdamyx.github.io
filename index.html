@@ -63,11 +63,30 @@ h2 {
 	height: 32px;
 	width: 32px;
 }
+#small_menu {
+	display: none;
+	padding-left: 9.5rem;
+}
+.menu_img {
+	height: 19px;
+	width: 19px;
+}
+.noshow {
+	display: none;
+	position: absolute;
+	z-index: 1;
+}
+.show {
+	display: block;
+}
 #main {
 	/* Helpful code below for increasing padding as display width decreases (to compensate for header as it resizes) */
 	padding-top: calc(20rem - 10vw);
 	text-align: center;
 }
+
+
+
 @media screen and (max-width: 1300px) {
 	* {
 		font-size: 80%;
@@ -96,16 +115,22 @@ h2 {
 	#social_buttons {
 		display: none;
 	}
+	#small_menu {
+		display: block;
+	}
 }
 </style>
 
 
 <body>
-  <!-- All page content that the users see goes here -->
-
- 
+	<!-- All page content that the users see goes here -->
+	<script>
+		function toggleFunc() {
+			document.getElementById("menu_content").classList.toggle("show");
+		}
+	</script>
   <header id="header">
-    <!-- Header to go across multiple pages here. -->
+	<!-- Header to go across multiple pages here. -->
 	<h1 id="name_title">Chris Amyx</h1>
 	
 	<nav id="navbar">
@@ -121,6 +146,20 @@ h2 {
 		<a href="https://github.com/Dr-Toboggan"><img src="img/GitHub-Mark-Light-120px-plus.png"  class="buttons" /></a>
 		<a href="https://twitter.com/default__name"><img src="img/Twitter_Social_Icon_Circle_White.png"  class="buttons" /></a>
 		<a href="https://www.linkedin.com/in/chris-amyx-75109090/"><img src="img/In-White-121px-R.png" class="buttons" /></a>
+	</div>
+	
+	<div id="small_menu">
+		<button id="menu_button" onclick="toggleFunc()"><img src="img/menu2.png" class="menu_img"></button>
+		<div id="menu_content" class="noshow">
+			<a href="#intro" class="nav-link">Intro</a>
+			<a href="#experience" class="nav-link">Experience</a>
+			<a href="#projects" class="nav-link">Projects</a>
+			<a href="#personal" class="nav-link">Personal</a>
+			<a href="#contact" class="nav-link">Contact</a>
+			<a href="https://github.com/Dr-Toboggan">My GitHub</a>
+			<a href="https://twitter.com/default__name">My Twitter</a>
+			<a href="https://www.linkedin.com/in/chris-amyx-75109090/">My LinkedIn</a>
+		</div>
 	</div>
   </header>
 
