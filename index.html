@@ -65,7 +65,7 @@ h2 {
 }
 #small_menu {
 	display: none;
-	padding-left: 9.5rem;
+	padding-left: 9rem;
 }
 .menu_img {
 	height: 19px;
@@ -74,17 +74,22 @@ h2 {
 .noshow {
 	display: none;
 	position: absolute;
+	font-size: 3rem;
 	width: 30%;
 	right: 0%;
+	overflow: auto;
+	box-shadow: -0.2rem 1rem 2rem 0.5rem #999999;
 	background-color: #880000;
 	z-index: 1;
-	font-size: 3rem;
 }
 .noshow a {
-	padding: 15px 15px;
+	padding: 2rem 2rem;
 	text-decoration: none;
+	color: #FFFFFF;
 	display: block;
-
+}
+.noshow a:hover {
+	background-color: #AA3300;
 }
 .show {
 	display: block;
@@ -94,7 +99,6 @@ h2 {
 	padding-top: calc(20rem - 10vw);
 	text-align: center;
 }
-
 
 
 @media screen and (max-width: 1300px) {
@@ -161,14 +165,14 @@ h2 {
 	<div id="small_menu">
 		<button id="menu_button" onclick="toggleFunc()"><img src="img/menu2.png" class="menu_img"></button>
 		<div id="menu_content" class="noshow">
-			<a href="#intro" class="nav-link">Intro</a>
-			<a href="#experience" class="nav-link">Experience</a>
-			<a href="#projects" class="nav-link">Projects</a>
-			<a href="#personal" class="nav-link">Personal</a>
-			<a href="#contact" class="nav-link">Contact</a>
-			<a href="https://github.com/Dr-Toboggan" class="nav-link">My GitHub</a>
-			<a href="https://twitter.com/default__name" class="nav-link">My Twitter</a>
-			<a href="https://www.linkedin.com/in/chris-amyx-75109090/"class="nav-link">My LinkedIn</a>
+			<a href="#intro" class="menu-link">Intro</a>
+			<a href="#experience" class="menu-link">Experience</a>
+			<a href="#projects" class="menu-link">Projects</a>
+			<a href="#personal" class="menu-link">Personal</a>
+			<a href="#contact" class="menu-link">Contact</a>
+			<a href="https://github.com/Dr-Toboggan" class="menu-link">My GitHub</a>
+			<a href="https://twitter.com/default__name" class="menu-link">My Twitter</a>
+			<a href="https://www.linkedin.com/in/chris-amyx-75109090/" class="menu-link">My LinkedIn</a>
 		</div>
 	</div>
   </header>
