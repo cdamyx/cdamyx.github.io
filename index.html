@@ -32,6 +32,7 @@ p {
 }
 h1 {
 	font-size: 3rem;
+	text-shadow: 2px 2px 4px #000000;
 }
 h2 {
 	font-size: 2rem;
@@ -112,16 +113,32 @@ h6 {
 #main {
 	padding-top: 10rem;
 	text-align: center;
-	background-color: lightgray;
+	background-color: darkgray;
 }
 #first_block {
-	background-color: lightgray;
+	color: white;
+	background-color: darkgray;
 }
 #second_block {
 	background-color: white;
 	padding-top: 3rem;
 }
+#second_inner {
+	display: flex;
+	justify-content: center;
+}
+#para1 {
+	flex: 50%;
+	padding: 1rem 2rem 1rem 20rem;
+	text-align: left;
+}
+#para2 {
+	flex: 50%;
+	padding: 1rem 20rem 1rem 2rem;
+	text-align: left;
+}
 .my_pic {
+	color: black;
 	height: 400px;
 	width: 300px;
 	border-radius: 20px;
@@ -226,12 +243,20 @@ h6 {
 		<img src="img/me.jpg" class="my_pic"/>
 		<div id="description">
 			<h1>Chris Amyx</h1>
-			<p>Network Engineer. Aspiring Software Engineer.</p>
+			<p>Network Engineer. Aspiring Software Developer.</p>
 		</div>
 	</div>
 	
 	<div id="second_block">
 		<h2>Introduction</h2>
+		<div id="second_inner">
+			<div id="para1">
+				<p>Thank you for taking the time to view my portfolio. I have seven years of professional experience in the Information Technology industry, as well as a Bachelor's Degree in IT. For the last three and a half years I've been a Network Engineer for a rural ISP. I was recently asked to resign due to my former employer closing its doors on my department. While I was initially disappointed by this outcome, it has prompted me to reevaluate these last seven years to determine what really matters to me regarding my career.</p>
+			</div>
+			<div id="para2">
+				<p>This time of reflection has made me realize that the most satifying points of my career haven't come from working with firewalls, configuring/maintaining servers, or troubleshooting intricate customer networks. Rather, my most blissful moments in IT came when I was creating software to help people, automating repetitive processes with scripts, and increasing organization productivity with my own code. I am very excited to be shifting gears to pursue my true passion: Software Development.</p>
+			</div>
+		</div>
 	</div>
   </main>
 
