@@ -183,6 +183,37 @@ h6 {
 .project_links {
 	padding: 0 0 1rem 0;
 }
+#fifth_block {
+	color: white;
+	background-color: darkgray;
+	padding-top: 3rem;
+}
+#fifth_inner {
+	display: flex;
+	justify-content: center;
+}
+#para6 {
+	flex: 50%;
+	padding: 1rem 2rem 1rem 20rem;
+	text-align: left;
+}
+#para7 {
+	flex: 50%;
+	padding: 1rem 20rem 3rem 2rem;
+	text-align: left;
+}
+#sixth_block {
+	background-color: white;
+	padding-top: 3rem;
+}
+#sixth_inner {
+	display: block;
+	text-align: center;
+	justify-content: center;
+}
+#para8 {
+	padding: 1rem 1rem 1rem 1rem;
+}
 .my_pic {
 	color: black;
 	height: 400px;
@@ -192,6 +223,17 @@ h6 {
 }
 #description {
 	padding: 2rem 0 2rem 0;
+}
+#footer {
+	color: white;
+	background-color: #003355;
+	padding: 1.5rem 0 1.5rem 0;
+	width: 100%;
+	justify-content: center;
+	text-align: center;
+}
+#footer_text {
+	font-size: 1rem;
 }
 
 @media screen and (max-width: 1300px) {
@@ -237,6 +279,17 @@ h6 {
 		flex: none;
 		padding: 1rem 15rem 3rem 15rem;
 	}
+	#fifth_inner {
+		display: block;
+	}
+	#para6 {
+		flex: none;
+		padding: 1rem 15rem 1rem 15rem;
+	}
+	#para7 {
+		flex: none;
+		padding: 1rem 15rem 3rem 15rem;
+	}
 	.my_pic {
 		height: 275px;
 		width: 206.25px;
@@ -274,6 +327,17 @@ h6 {
 		padding: 1rem 5rem 1rem 5rem;
 	}
 	#para4 {
+		flex: none;
+		padding: 1rem 5rem 3rem 5rem;
+	}
+	#fifth_inner {
+		display: block;
+	}
+	#para6 {
+		flex: none;
+		padding: 1rem 5rem 1rem 5rem;
+	}
+	#para7 {
 		flex: none;
 		padding: 1rem 5rem 3rem 5rem;
 	}
@@ -363,7 +427,7 @@ h6 {
 				<ul>
 					<li>Javascript certificate</li>
 					<li>HTML/CSS certificate</li>
-					<li>Javascript is my area of expertise, what I’ve studied the most, and what I’d like to focus on, and I’ve been studying FCC for the last few months.</li>
+					<li>Javascript is my area of expertise, what I’ve studied the most, and what I’d like to focus on, and I’ve been studying FCC for the last few months. Also Git.</li>
 					<li>Please see my LinkedIn page for full career accomplishments/qualifications.</li>
 				</ul>
 			</div>
@@ -382,11 +446,42 @@ h6 {
 			</div>
 		</div>
 	</div>
+	
+	<div id="fifth_block">
+		<h5>Personal</h5>
+		<div id="fifth_inner">
+			<div id="para6">
+				<ul>
+					<li>Over one year of coding experience during the course of my career, including:</li>
+					<li>Six months professional development experience - web application. PHP, SQL, Javascript. Link to vid.</li>
+					<li>Another six months to a year of coding, scripting, and API work accrued over course of career, including bash scripts for custom CentOS deployments, powershell automated backup scripts, and merging of ticket systems using JSON APIs.</li>
+				</ul>
+			</div>
+			<div id="para7">
+				<ul>
+					<li>Javascript certificate</li>
+					<li>HTML/CSS certificate</li>
+					<li>Javascript is my area of expertise, what I’ve studied the most, and what I’d like to focus on, and I’ve been studying FCC for the last few months. Also Git.</li>
+					<li>Please see my LinkedIn page for full career accomplishments/qualifications.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div id="sixth_block">
+		<h6>Contact</h6>
+		<div id="sixth_inner">
+			<div id="para8">
+					<p>Contact form</p>
+			</div>
+		</div>
+	</div>
   </main>
 
 
-  <footer>
+  <footer id="footer">
     <!-- repeating footer info here -->
+	<p id="footer_text">Here is where the footer goes</p>
   </footer>
 
 </body>  
