@@ -36,6 +36,11 @@ li {
 a {
 	font-size: 1.4rem;
 }
+form {
+	font-size: 1.4rem;
+	text-align: center;
+	justify-content: center;
+}
 h1 {
 	font-size: 3rem;
 	text-shadow: 2px 2px 4px #003355;
@@ -211,12 +216,21 @@ h6 {
 	padding-top: 3rem;
 }
 #sixth_inner {
-	display: block;
-	text-align: center;
-	justify-content: center;
+	display: flex;
 }
 #para8 {
 	padding: 1rem 1rem 1rem 1rem;
+	width: 33%;
+}
+#para9 {
+	padding: 1rem 1rem 1rem 1rem;
+	width: 33%;
+	justify-content: left;
+	text-align: left
+}
+#para10 {
+	padding: 1rem 1rem 1rem 1rem;
+        width: 33%;
 }
 .my_pic {
 	color: black;
@@ -238,6 +252,24 @@ h6 {
 }
 #footer_text {
 	font-size: 1rem;
+}
+#guest_name {
+	padding: 1rem 1rem 1rem 1rem;
+	margin: 0.5rem 0 0.5rem 0;
+	background-color: lightgray;
+	width: 100%;
+}
+#guest_email {
+	padding: 1rem 1rem 1rem 1rem;
+	margin: 0.5rem 0 0.5rem 0;
+	background-color: lightgray;
+	width: 100%;
+}
+#guest_message {
+	padding: 1rem 1rem 1rem 1rem;
+        margin: 0.5rem 0 0.5rem 0;
+        background-color: lightgray;
+	width: 100%;
 }
 
 @media screen and (max-width: 1300px) {
@@ -475,13 +507,20 @@ h6 {
 	<div id="sixth_block">
 		<h6 id="contact">Contact</h6>
 		<div id="sixth_inner">
+			<div id="para9"></div>
 			<div id="para8">
-					<form action="https://formspree.io/chris@amyx.engineering" method="POST">
-    						<input type="text" name="name">
-    						<input type="email" name="_replyto">
-    						<input type="submit" value="Send">
-					</form>
+				<form id="contact_form" action="https://formspree.io/chris@amyx.engineering" method="POST">
+					<input type="text" name="name" id="guest_name" placeholder="Name">
+					<br>
+    					<input type="email" name="_replyto" id="guest_email" placeholder="Email">
+					<br>
+					<textarea name="message" id="guest_message" rows="5" cols="20" placeholder="Message"></textarea>
+					<br>
+    					<button type="submit">Send</button>
+					<br>
+				</form>
 			</div>
+			<div id="para10"></div>
 		</div>
 	</div>
   </main>
@@ -489,7 +528,7 @@ h6 {
 
   <footer id="footer">
     <!-- repeating footer info here -->
-	<p id="footer_text">Coded from scratch by Chris Amyx. Copyright 2018.</p>
+	<p id="footer_text">Coded from scratch by Chris Amyx. Copyright &copy; 2018.</p>
   </footer>
 
 </body>  
