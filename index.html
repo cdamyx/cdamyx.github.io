@@ -4,7 +4,8 @@
 
 <head>
 	<script>
-		function testClick(){
+	var dataLayer = [];
+		function testClick(d){
 			window.dataLayer = window.dataLayer || [];
 			window.dataLayer.push(
 				{
@@ -111,7 +112,7 @@
 	<div id="small_menu">
 		<button id="menu_button" onclick="toggleFunc()"><img src="img/menu2.png" class="menu_img"></button>
 		<div id="menu_content" class="noshow">
-			<a href="#second_block" class="menu-link" onclick="testClick()">Intro</a>
+			<a href="#second_block" class="menu-link" onclick="testClick(dataLayer);">Intro</a>
 			<a href="#third_block" class="menu-link">Experience</a>
 			<a href="#fourth_block" class="menu-link">Projects</a>
 			<a href="#fifth_block" class="menu-link">Personal</a>
