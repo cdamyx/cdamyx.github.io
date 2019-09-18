@@ -5,7 +5,11 @@
 <head>
 	<script>
 	var dataLayer = [];
-		function testClick(d){
+	window.dataLayer = window.dataLayer || [];
+	window.dataLayer.push(
+		{'event':'Test'}
+	);
+	/*	function testClick(d){
 			window.dataLayer = window.dataLayer || [];
 			window.dataLayer.push(
 				{
@@ -13,22 +17,9 @@
 				}
 			);
 		}
+	*/
 	</script>
-	<!--GTM Test Click Function-->
-	<!--
-	<script>
-		function testClick(){
-			window.dataLayer = window.dataLayer || [];
-			window.dataLayer.push({
-				'event':'Test'
-			)
-			return "Test";
-			};
-		}
-	</script>
-	<script>
-		var dataLayer = [];
-	</script> -->
+	
   <!-- Google Tag Manager -->
 	<script>
 		(function(w,d,s,l,i){
