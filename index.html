@@ -3,11 +3,14 @@
 
 
 <head>
+	<!--GTM Test Click Function-->
 	<script>
-		window.dataLayer = window.dataLayer || [];
-		window.dataLayer.push({
-			event:'Test'
-		)};
+		function testClick(){
+			window.dataLayer = window.dataLayer || [];
+			window.dataLayer.push({
+				event:'Test'
+			)};
+		}
 	</script>
   <!-- Google Tag Manager -->
 	<script>
@@ -92,7 +95,7 @@
 	<div id="small_menu">
 		<button id="menu_button" onclick="toggleFunc()"><img src="img/menu2.png" class="menu_img"></button>
 		<div id="menu_content" class="noshow">
-			<a href="#second_block" class="menu-link">Intro</a>
+			<a href="#second_block" class="menu-link" onClick="testClick()">Intro</a>
 			<a href="#third_block" class="menu-link">Experience</a>
 			<a href="#fourth_block" class="menu-link">Projects</a>
 			<a href="#fifth_block" class="menu-link">Personal</a>
