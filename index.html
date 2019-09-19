@@ -5,6 +5,7 @@
 <head>
 	<script>
 	var dataLayer = [];
+	var url = "https://amyx.engineering"
 	/*window.dataLayer = window.dataLayer || [];
 	window.dataLayer.push(
 		{'event':'Test'}
@@ -34,10 +35,10 @@
 						'position':'position'
 					}]
 				}
-			}	//,
-				//'eventCallback': function() {
-				//	document.location = url
-				//}
+			},
+			'eventCallback': function() {
+				document.location = url
+			}
 		});
 	}
 	
