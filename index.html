@@ -19,6 +19,30 @@
 			);
 		}
 	
+	function productClick(partNumber,itemTitle,brandName,position,url){
+		window.dataLayer = window.dataLayer || [];
+		window.dataLayer.push({
+			'event':'EEproductClick',
+			'ecommerce': {
+				'currencyCode':'USD',
+				'click': {
+					'products': [{ 
+						'id':'partNumber', 
+						'name':'itemTitle', 
+						'price':'0.0', 
+						'brand':'brandName',
+						'position':'position'
+					}]
+				}
+			}
+			'eventCallback': function() {
+				document.location = url
+			}
+		});
+	}
+	
+	
+	
 	</script>
 	
   <!-- Google Tag Manager -->
@@ -88,7 +112,7 @@
 	
 	<nav id="navbar">
 		<!-- Use nav for links to other places on this website. Not for external links to other sites -->
-		<a href="#second_block" class="nav-link" onclick="testClick();">Intro</a>
+		<a href="#second_block" class="nav-link" onclick="productClick();">Intro</a>
 		<a href="#third_block" class="nav-link">Experience</a>
 		<a href="#fourth_block" class="nav-link">Projects</a>
 		<a href="#fifth_block" class="nav-link">Personal</a>
