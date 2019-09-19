@@ -1,55 +1,63 @@
 <!DOCTYPE html>
 <html>
 
-
 <head>
+	<!--GTM Main dataLayer Declaration and userID Push - All Pages-->
 	<script>
 	var dataLayer = [];
-	//var url = "https://amyx.engineering/#second_block";
-	/*window.dataLayer = window.dataLayer || [];
+	window.dataLayer = window.dataLayer || [];
 	window.dataLayer.push(
-		{'event':'Test'}
-	);
-	*/
-		function testClick(){
-			window.dataLayer = window.dataLayer || [];
-			window.dataLayer.push(
-				{
-					'event':'Test'
-				}
-			);
+		{
+			'userID':'1'
 		}
+	);
+	</script>
 	
-	function productClick(partNumber,itemTitle,price,brandName,position){
+	<!--GTM Product Impressions-->
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	window.dataLayer.push({
+		'event': 'EEimpressionView',
+		'ecommerce': {
+			'impressions': [
+				{
+					'id':'GS13M',
+					'name':'3M&trade; 054007-33976',
+					'brand':'3M&trade;',
+					'position':1
+				},
+				{
+					'id':'AC123',
+					'name':'productName12345',
+					'brand':'brandName53',
+					'position':2
+				}
+			]
+		}
+	});
+	</script>
+	
+	<!--GTM Product Impression Click-->
+	<script>
+	function productClick(partNumber,itemTitle,brandName,position){
 		window.dataLayer = window.dataLayer || [];
 		window.dataLayer.push({
 			'event':'EEproductClick',
 			'ecommerce': {
-				'currencyCode':'USD',
 				'click': {
 					'products': [{ 
 						'id':'partNumber', 
 						'name':'itemTitle', 
-						'price':'0.0', 
 						'brand':'brandName',
 						'position':'position'
 					}]
 				}
-			}		//,
-					//'eventCallback': function(url){
-						//alert(window.location.href);
-						//alert(url);
-						//window.location = url;
-					//},
-					//'eventTimeout': 2000
+			}		
 		});
 	}
-	
-	
-	
 	</script>
 	
-  <!-- Google Tag Manager -->
+<!-- Google Tag Manager -->
 	<script>
 		(function(w,d,s,l,i){
 			w[l]=w[l]||[];
