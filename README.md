@@ -1,2 +1,2 @@
 # cdamyx.github.io
-Portfolio, Projects, and More!
+GitHub Pages Developer Portfolio!
